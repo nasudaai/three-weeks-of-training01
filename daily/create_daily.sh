@@ -1,8 +1,8 @@
 #!/bin/bash
 #echo "test"
 
-filename="$(date "+%Y-%m-%d").mjs"
-#echo $filename
+filename="$(date "+%d").mjs"
+echo $filename
 
 
 mode=$1

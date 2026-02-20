@@ -1,7 +1,7 @@
 #!/bin/bash
 #echo "test"
 
-filename="$(date "+%d").mjs"
+filename="$(date "+%d-%m-%-Y").mjs"
 echo $filename
 
 

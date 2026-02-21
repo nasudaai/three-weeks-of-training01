@@ -9,6 +9,8 @@ mode=$1
 
 if [ $mode = "make" ]; then
   echo "make"
+  touch $filename
+  ls ./
 fi
 
 if [ $mode = "mv" ]; then

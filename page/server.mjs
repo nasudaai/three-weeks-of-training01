@@ -4,8 +4,14 @@ console.log(createServer);
 console.log(readFileSync);
 
 const html = readFileSync("./index.html");
+const css = readFileSync("./styles.css");
 
 const server = createServer((req, res) => {
+  if (req.url === "/styles.css") {
+    res.end(css);
+
+    return;
+  }
   res.end(html);
 });
 

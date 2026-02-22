@@ -1,8 +1,12 @@
 import { createServer } from 'node:http';
+import { readFileSync } from 'node:fs';
 console.log(createServer);
+console.log(readFileSync);
+
+const html = readFileSync("./index.html");
 
 const server = createServer((req, res) => {
-  res.end("html");
+  res.end(html);
 });
 
 server.listen(3000, () => {

@@ -1,4 +1,10 @@
 const args = process.argv.slice(2);
 console.log(args);
 
-process.stdout.write("str");
+function write() {
+
+  process.stdout.write("str");
+}; 
+
+
+write();

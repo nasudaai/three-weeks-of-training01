@@ -1,3 +1,5 @@
+const args = process.argv.slice(2);
+
 const arr = [1, 2, 3, 4, 5];
 
 

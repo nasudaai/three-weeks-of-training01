@@ -1,5 +1,9 @@
 const args = process.argv.slice(2);
 
+if (args.length >= 1) {
+  console.log(args);
+}
+
 const arr = [1, 2, 3, 4, 5];
 
 

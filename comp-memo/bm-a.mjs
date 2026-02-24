@@ -1,2 +1,5 @@
-const key = "D";
-console.log(key);
+const obj = {
+  key: "key"
+}
+obj.key = "D";
+console.log(obj);

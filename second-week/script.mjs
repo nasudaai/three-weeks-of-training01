@@ -9,11 +9,20 @@ let {key} = obj;
 console.log(key);
 
 
+function reVal() {
+  const value = obj.key;
 
-function write() {
+  return value;
+};
 
-  process.stdout.write("str");
+const value = reVal();
+
+
+
+function write(str) {
+
+  process.stdout.write(str);
 }; 
 
 
-write();
+write(value);

@@ -1,1 +1,2 @@
-//compose
+//composition
+const chordProgression = ["Bm", "A"];

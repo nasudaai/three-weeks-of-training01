@@ -1,8 +1,10 @@
 import {write} from './out.mjs';
 
 function main() {
-  console.log("test");
-  write("string");
+
+  const args = process.argv.slice(2);
+  write(JSON.stringify(args));
+  write("string\n");
 };
 
 main();
